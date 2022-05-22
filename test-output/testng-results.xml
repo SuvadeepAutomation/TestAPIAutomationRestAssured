@@ -1,309 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-14T23:47:08 IST" name="Rest API Test Suite" finished-at="2022-05-14T23:47:22 IST" duration-ms="14051">
+  <suite started-at="2022-05-22T11:33:19 IST" name="Default suite" finished-at="2022-05-22T11:33:21 IST" duration-ms="1293">
     <groups>
     </groups>
-    <test started-at="2022-05-14T23:47:08 IST" name="Rest API regression Test" finished-at="2022-05-14T23:47:22 IST" duration-ms="14051">
-      <class name="com.qa.api.gorest.tests.CreateUserTest">
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:09 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:10 IST" duration-ms="1571" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sanjoy Basu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sbasu@hotmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[active]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-05-22T11:33:19 IST" name="Default test" finished-at="2022-05-22T11:33:21 IST" duration-ms="1293">
+      <class name="HttpClientAPIs.POSTUserAPI">
+        <test-method signature="createUserAPI()[pri:0, instance:HttpClientAPIs.POSTUserAPI@428640fa]" started-at="2022-05-22T11:33:19 IST" name="createUserAPI" finished-at="2022-05-22T11:33:21 IST" duration-ms="1252" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at HttpClientAPIs.POSTUserAPI.createUserAPI(POSTUserAPI.java:83)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:10 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:11 IST" duration-ms="415" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shilpisree Basu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[shpbasu@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[female]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[inactive]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:11 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:11 IST" duration-ms="398" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pallavi Patel]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pall@hotmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[female]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:11 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:12 IST" duration-ms="379" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pratik Jagdev]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[PR12@hotmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:12 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:12 IST" duration-ms="389" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pankaj Patel]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pnkaj@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[inactive]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:12 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:12 IST" duration-ms="403" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Raj Saxena]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rajsax@hotmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:12 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:13 IST" duration-ms="384" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sonali Roy]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[songh@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[female]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:13 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:13 IST" duration-ms="432" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mimi Dutta]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mini@hotmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[female]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[inactive]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:13 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:14 IST" duration-ms="382" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sumon Dey]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sumrov@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-        <test-method signature="createAPIPOSTTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@2663e964]" started-at="2022-05-14T23:47:14 IST" name="createAPIPOSTTest" data-provider="getUserData" finished-at="2022-05-14T23:47:14 IST" duration-ms="378" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sourav Roy]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sourav@hotmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[inactive]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAPIPOSTTest -->
-      </class> <!-- com.qa.api.gorest.tests.CreateUserTest -->
-      <class name="com.qa.api.gorest.tests.GetImgurAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.api.gorest.tests.GetImgurAPITest@6ea2bc93]" started-at="2022-05-14T23:47:08 IST" name="setUp" finished-at="2022-05-14T23:47:11 IST" duration-ms="3273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="getAccountBlockAPITest()[pri:0, instance:com.qa.api.gorest.tests.GetImgurAPITest@6ea2bc93]" started-at="2022-05-14T23:47:11 IST" name="getAccountBlockAPITest" finished-at="2022-05-14T23:47:13 IST" duration-ms="1707" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAccountBlockAPITest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.api.gorest.tests.GetImgurAPITest@6ea2bc93]" started-at="2022-05-14T23:47:13 IST" name="setUp" finished-at="2022-05-14T23:47:14 IST" duration-ms="1445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="getAccountImage()[pri:0, instance:com.qa.api.gorest.tests.GetImgurAPITest@6ea2bc93]" started-at="2022-05-14T23:47:14 IST" name="getAccountImage" finished-at="2022-05-14T23:47:16 IST" duration-ms="2055" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAccountImage -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.api.gorest.tests.GetImgurAPITest@6ea2bc93]" started-at="2022-05-14T23:47:16 IST" name="setUp" finished-at="2022-05-14T23:47:18 IST" duration-ms="1701" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="uploadImagePOSTApiTest()[pri:0, instance:com.qa.api.gorest.tests.GetImgurAPITest@6ea2bc93]" started-at="2022-05-14T23:47:18 IST" name="uploadImagePOSTApiTest" finished-at="2022-05-14T23:47:22 IST" duration-ms="3845" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadImagePOSTApiTest -->
-      </class> <!-- com.qa.api.gorest.tests.GetImgurAPITest -->
-      <class name="com.qa.api.gorest.tests.GetUserTest">
-        <test-method signature="getAllUserList()[pri:-1, instance:com.qa.api.gorest.tests.GetUserTest@5f0fd5a0]" started-at="2022-05-14T23:47:08 IST" name="getAllUserList" finished-at="2022-05-14T23:47:10 IST" duration-ms="2425" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAllUserList -->
-        <test-method signature="getUserWithQueryParamsAPITest()[pri:1, instance:com.qa.api.gorest.tests.GetUserTest@5f0fd5a0]" started-at="2022-05-14T23:47:10 IST" name="getUserWithQueryParamsAPITest" finished-at="2022-05-14T23:47:11 IST" duration-ms="503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserWithQueryParamsAPITest -->
-      </class> <!-- com.qa.api.gorest.tests.GetUserTest -->
-    </test> <!-- Rest API regression Test -->
-  </suite> <!-- Rest API Test Suite -->
+        </test-method> <!-- createUserAPI -->
+      </class> <!-- HttpClientAPIs.POSTUserAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
